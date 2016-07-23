@@ -1,0 +1,30 @@
+<html>  
+	<head>  
+		<meta http-equiv="Content-Type"  content="text/html;charset=utf-8">
+		<script type="text/javascript">  
+				function javacalljs(){  
+					 document.getElementById("content").innerHTML +=
+						 "<br\>java调用了js函数";
+				}  
+				  
+				function javacalljswithargs(arg){  
+					 document.getElementById("content").innerHTML +=     
+						 ("<br\>"+arg);  
+				}  
+				  
+		</script>  
+	</head> 
+
+	<body>  
+			这是一个HTML页面，页面有如下2个功能 <br/> 
+			<br/>
+			<br/>
+			<a onClick="window.testInterface.startCall()">点击拨打10086</a><br/>
+			<a onClick="window.testInterface.showToast('我弹了一个Toast')" >点击弹出Toast，内容为“我弹了一个Toast”</a>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<div id="content">HTML内容显示区：</div>  
+	</body>  
+</html>  
